@@ -1,10 +1,5 @@
-
-from operator import truediv
-
-
 star=int(input())
 
     
-for i in star:
+for i in range(0,star+1):
         print('*'*i)
-        i=i+1
