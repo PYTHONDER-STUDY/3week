@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>속성 선택자</title>
+<style>
+    ul{
+		list-style:none; /* list-style 기호 및 여백 제거하기 */
+   }
+	 li {
+		 width:120px;	 
+		 display:inline-block;
+		 margin:10px;
+	 }
+		li a {
+			padding: 5px 20px;
+			font-size: 14px;
+			color: blue; /* 글자색상 */
+			text-decoration: none; /* 선으로 텍스트를 꾸밀 수 있게 해주는 속성 none */
+		}
+	    a[href]{ /* a태그 [href] 속성 선택자 */ 
+		           background-color:yellow; /* background color*/
+	 }
+</style>
+</head>
+
+<body>
+	<ul>
+		<li><a>메인 메뉴 : </a></li>
+		<li><a href="#">메뉴 1</a></li> 
+		<li><a href="#">메뉴 2</a></li> 
+		<li><a href="#">메뉴 3</a></li> 
+		<li><a href="#">메뉴 4</a></li> 
+	</ul>
+  </body>
+ </html>

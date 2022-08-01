@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+		<meta charset="utf-8">
+    <title> 가상 클래스 </title>
+    <style>
+			body {
+				background-color:#fff; 
+			}
+			form fieldset{
+				margin-bottom:25px; 
+			}	 
+			form legend{
+				font-size:15px;
+				font-weight:600; 
+			}
+			input:disabled { /* 비 활성화 상태일 때 스타일 지정 */		 
+				background:#ddd;
+				border:1px #ccc solid;
+			}
+			input:checked+span { /* span 태그 텍스트가 checked 상태일때 스타일 지정 */
+				color:blue;
+			}
+	 	</style>
+      
+      <style>
+			
+			#id input:disabled{ /* input id가 name이 비 활성화 상태일 때 스타일 지정 */		 
+				background:red;
+				border:1px #ccc solid;
+			}
+			body{
+				border: 3px solid salmon;
+			}
+			
+	 	</style>
+  </head>
+  <body>
+		<form>
+			<fieldset>
+				<legend>사용자 정보</legend>
+				<label>이름 <input type="text" disabled></label> <!-- 비 활성화 -->
+			</fieldset>
+			<fieldset>
+				<legend>신청 과목</legend>
+				<p>이 달에 신청할 과목을 선택하세요</p>
+				<label><input type="radio" name="subject" value="speaking"><span>회화</span></label>
+				<label><input type="radio" name="subject" value="grammar"><span>문법</span></label>
+				<label><input type="radio" name="subject" value="writing"><span>작문</span></label> 
+			</fieldset>		
+		</form>
+      <hr>
+      <br>
+      <br>
+      <!-- 교재 내용에서 추가 작업 -->
+      <form>
+			<fieldset>
+				<legend>본인이름 정보</legend>
+				<label>이름 <input id="name" type="text" disabled ></label> <!-- 비활성화 -->
+			</fieldset>
+			
+		</form>
+  </body>
+</html>

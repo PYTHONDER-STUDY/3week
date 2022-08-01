@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>속성 선택자</title>
+<style>
+ul {
+		list-style:none;
+}
+	li {
+		padding: 5px 30px;
+	}
+		li a {
+			font-size: 30px; /* 본인이 조구 싶은 px값 사용 */
+			color: blue;
+			text-decoration: none;
+		}
+	 a[target="_blank"]
+	 {
+		 padding-right:30px;
+         background:url(images/newwsindow.png)no-repeat center right;
+		}
+    a[target="_self"]{ /* target 속성 값 _self 속성에 대한 스타일 적용 */
+		padding-right:30px;
+		 background:url(images/newwsindow.png)no-repeat center right;}
+</style>
+</head>
+
+<body>
+	<h1>HTML5 표준안 사이트 </h1>
+	<ul>
+		<li><a href="http://www.w3c.org/TR/html" target="_blank">HTML</a></li>
+		<li><a href="https://www.w3.org/TR/selectors">CSS Selector Level 3</a></li>
+		<li><a href="https://www.w3.org/TR/css3-mediaqueries" target="_self">미디어쿼리</a></li>		
+	</ul>
+  </body>
+ </html>

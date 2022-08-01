@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+		 <title> 웹 폼</title>
+		 <meta charset="utf-8">
+  <!--<style>
+				body {
+					background-color:; 
+				}
+				form fieldset{
+					margin-bottom:; 
+				}
+				form legend{
+					font-size:;
+					font-weight:; 
+				}
+				form label.reg {
+					font-size:;
+					width:;
+					color:;
+					font-weight:;		
+					float:;
+					text-align:;
+					margin-right:;
+				}
+				form ul li{
+					list-style:none; 
+					margin: ;	
+					font-size:;	
+				} 
+
+				
+	 		</style>-->
+  </head>
+  <body>
+    <h1> 여름방학 특강 신청</h1>
+  	<form>
+  		<fieldset id="subject"><!--교재 161페이지 참고-->
+  			<legend>수강과목</legend>
+  			<ul>
+  				<li>
+  					<label class="reg" for="subj"></label>
+  					<input type="text" id="" value="오전 9:00~11:00" >
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<fieldset id="register"><!--교재 162페이지 참고-->
+  			<legend> 신청자</legend>
+  			<ul>
+  				<li>
+  					<label class="reg" for="">이름</label>
+  					<input type="text" id="uname" >
+  				</li>
+  				<li>
+  					<label class="reg" for="uid">학번</label>
+  					<input type="text" id="uid" placeholder="" maxlength="8" required>
+  				</li>
+  				<li>
+  					<label class="reg" for="uclass">학과</label>
+  					< id="uclass">
+  						<option value="archi">건축공학과</option>
+  						< value="mechanic">기계공학과</option>
+  						<option value="indust">산업공학과</option>
+  						< value="elec">전기전자공학과</option>
+  						<option value="computer" selected>컴퓨터공학과</option>
+  						<option value="chemical">화학공학과</option>
+  					</select>
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<fieldset><!--교재 163페이지 참고-->
+  			<legend>교재 주문</legend>
+  			<ul>
+  				<li>
+  					<label class="reg" for="book">교재</label>
+  					<input type="number" id="book" value="1" min="1" max="3">
+  				</li>
+  				<li>
+  					<label class="reg" for="wsheet">워크시트</label>
+  					<input type="number" id="wsheet" value="1" min="1" max="3">
+  				</li>
+  				<li>
+  					<label class="reg" for="group">단체주문</label>
+  					<input type="number" id="group" value="10" min="10" max="100" step="">
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<fieldset><!--버튼만들기-->
+  			<button type="" value="submit">신청하기</button> <!--submit버튼-->
+  			<button type="" value="reset">다시쓰기</button><!--reset버튼-->
+  		</fieldset>
+      </form>
+<hr>
+        <h1>회원 가입을 환영합니다</h1> <!--교재 163페이지 join 참고-->
+		<form>
+			<ul>
+    		<li><label>아이디: <input type="text" id="user_id" size="10" minlength="4" maxlength="15"></label><small style="color:red;"> 4~15자리 이내의 영문과 숫자</small></li>
+				<li><label>이메일: <input type="email" id="user_email"></label></li>
+				<li><label>비밀번호: <input type="password" id="user_pwd"></label></li>
+				<li><label>비밀번호 확인: <input type="password" id="check_pwd"></label></li>
+				<li><input type="submit" value="회원가입"></li>
+			</ul>
+  </form>
+
+ 
+  </body>
+</html>

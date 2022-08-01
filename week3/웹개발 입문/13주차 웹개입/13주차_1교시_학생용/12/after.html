@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>link 스타일</title>
+<style>
+  .container1 {
+    width: 960px;
+    margin : 0 auto;
+  }
+  ul li {
+    margin:15px;
+  }
+  li.hot::after { /* 특정 요소의 뒤에 NEW 컨텐츠 추가하기 */
+    content:"NEW!!";
+    font-size:x-small;
+    padding:2px 4px;
+    margin: 0 10px;
+    border-radius:2px;
+    background:#f00;
+    color:#fff;
+  }
+</style>
+  <style>
+  .container2 {
+    width: 960px;
+    margin : 0 auto;
+  }
+  ul li {
+    margin:15px;
+  }
+  li.cold::before{ /* 특정 요소의 앞에 NEW 컨텐츠 추가하기 */
+    content:"NEW!!";
+    font-size:x-small;
+    padding:2px 4px;
+    margin: 0 10px;
+    border-radius:2px;
+    background:#f00;
+    color:#fff;
+  }
+</style>
+
+
+</head>
+
+<body>
+  <div class="container1">
+    <h1>제품 목록</h1>
+    <ul>
+      <li class="hot">제품 A</li>
+      <li>제품 B</li>
+      <li>제품 C</li>
+      <li class="hot">제품 D</li>
+    </ul>
+      <hr>
+      <br>
+      <br>
+  </div>
+    <div class="container2">
+    <h1>제품 목록</h1>
+    <ul>
+      <li class="cold">제품 A</li>
+      <li>제품 B</li>
+      <li>제품 C</li>
+      <li class="cold">제품 D</li>
+    </ul>
+  </div>
+</body>
+</html>
